@@ -1,0 +1,182 @@
+body{
+    background: lightgray;
+    font-family: cursive; 
+}
+
+.notify{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    background: red;
+    border-radius: 30px;
+    width: 20px;
+    padding-left: 5px;
+    padding-right: 0px;
+    color: white;
+}
+.main{
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.nav{
+    top: 20px;
+    height: 40px;
+    padding: 10px;
+}
+
+.circle{ 
+    float: right;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#img1{
+    padding-bottom: 10px;
+}
+#img2{
+    height: 40px;
+}
+
+.title{
+    font-size: 25px;
+    margin-left: 30px;
+    
+    padding-bottom: 30px;
+}
+
+.title::after{
+    content: "265 available";
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+    font-family: cursive;
+    position: absolute;
+    top: 108px;
+    float: inherit;
+    transform: translateX(-155%);
+}
+
+.row{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+li{
+    padding-right: 30px;
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    color: grey;
+}
+
+li a:hover{
+    color: black;
+}
+
+.active{
+    color: black;
+}
+.active::after{
+    content: " ";
+    position: absolute;
+    top: 172px;
+    height: 0px;
+    width: 80px;
+    z-index: 0;
+    transform: translateX(-95%);
+    border: 6px solid transparent;
+    border-bottom-color:dodgerblue;
+    border-radius: 80px;
+}
+li:last-child{
+    border: 1px solid dodgerblue;
+    color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: dodgerblue;
+}
+
+hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.search{
+    margin-top: 0px;
+}
+.sc{
+    padding: 10px;
+    width: 90%;
+    margin: 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    background: whitesmoke;
+}
+
+.contacts{
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+.contact-row{
+    width:80%;
+    z-index: 200;
+}
+
+#img3{
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-left: 30px;
+}
+
+.check{
+    position: absolute;
+    margin-top:35px;
+    padding-top: 10px;
+    margin-right: 5px;
+    background: dodgerblue;
+    
+}
+.name{
+    position: absolute;
+    margin-left: 5px;
+    padding-top: 25px;  
+}
+
+.name::after{
+    content: "123-456-7890";
+    color: darkgrey;
+    position: absolute;
+    padding-top: 20px; 
+    transform: translateX(-40%);
+}
+
+.contact-col{
+    position: absolute;
+    right:20px;
+    top:300px;
+    z-index: 0;
+    color: grey;
+}
+
+.btn{
+    background: dodgerblue;
+    color: white;
+    position: fixed;
+    left: 150px;
+    bottom: 80px;
+    padding: 10px;
+    width: 210px;
+    border: 2px solid dodgerblue;
+    border-radius: 20px;
+    z-index: 20;
+}
